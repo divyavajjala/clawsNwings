@@ -7,7 +7,6 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 function Header ({size}) {
-    {/* <div style={{backgroundImage:`url(${backgroundImage})`, backgroundRepeat:"no-repeat",height: 530, width: 1400}}> */}
     return (<div className="navbar-container">
             <img className="logo" src={logo} alt="logo"></img>
             <ul className="navbar-items">
