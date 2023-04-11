@@ -13,10 +13,10 @@ import { useState } from 'react';
 
 
 function App() {
-    const[shoppingcart,setCart] = useState([]);
-    const addItems=(item)=>{
-        console.log(item);
-    }
+    // const[shoppingcart,setCart] = useState([]);
+    // const addItems=(item)=>{
+    //     console.log(item);
+    // }
   return (
       <BrowserRouter>
         <Header size={5}></Header>
