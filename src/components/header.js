@@ -7,9 +7,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 function Header ({size}) {
-    {/* <div style={{backgroundImage:`url(${backgroundImage})`, backgroundRepeat:"no-repeat",height: 530, width: 1400}}> */}
-    return (
-        <div className="navbar-container">
+    return (<div className="navbar-container">
             <img className="logo" src={logo} alt="logo"></img>
             <ul className="navbar-items">
                 <li className="nav-item">
@@ -30,19 +28,10 @@ function Header ({size}) {
                 <li className="nav-item">
                     <Link to="orderonline">ORDERONLINE</Link>
                 </li>
-                <li>
-                    <div className="ellipse"></div>
-                    {/* 
-                    <span className="triangle one"></span>
-                    <span className="triangle two"></span>
-                    <span className="triangle three"></span>
-                    <span className="triangle four"></span> */}
-                </li>
                 <li className="nav-item cart">
                     <Link to="shoppingcart"><AddShoppingCartIcon></AddShoppingCartIcon><span>{size}</span></Link>
                 </li>
             </ul>
-        </div>
-    )
+        </div>);
 }
 export default Header;

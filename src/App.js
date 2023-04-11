@@ -9,14 +9,14 @@ import Menu from "./components/pages/menu";
 import Gallery from "./components/pages/gallery";
 import Contact from "./components/pages/contact";
 import Orderonline from "./components/pages/orderonline";
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 function App() {
-    const[shoppingcart,setCart] = useState([]);
-    const addItems=(item)=>{
-        console.log(item);
-    }
+    // const[shoppingcart,setCart] = useState([]);
+    // const addItems=(item)=>{
+    //     console.log(item);
+    // }
   return (
       <BrowserRouter>
         <Header size={5}></Header>
