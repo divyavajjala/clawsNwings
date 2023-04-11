@@ -1,11 +1,10 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 function Footer() {
-    return(
-        <div className='socialmedia'>
+    return(<div className='socialmedia'>
             <div className='socialmedia-links'>
-                <a className = "instagram" href="https://www.instagram.com/claws_n_wings/?igshid=YmMyMTA2M2Y%3D" target="_blank"><span><InstagramIcon></InstagramIcon></span></a>
-                <a className = "facebook" href="https://m.facebook.com/p/Claws-n-Wings-100063716814944/?_rdr" target="_blank"><span><FacebookIcon></FacebookIcon></span></a>
+                <a className = "instagram" href="https://www.instagram.com/claws_n_wings/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener"><span><InstagramIcon></InstagramIcon></span></a>
+                <a className = "facebook" href="https://m.facebook.com/p/Claws-n-Wings-100063716814944/?_rdr" target="_blank" rel="noopener"><span><FacebookIcon></FacebookIcon></span></a>
             </div>
             <div className='address'>
                 <span className='address-text'>Golden leaf apartment, Saibaba Nagar, Alwal, Hyderabad, Telangana 500010, India</span>
@@ -13,7 +12,6 @@ function Footer() {
                 <span>info@claws_n_wings.com</span>
             </div>
 
-        </div>
-    )
+        </div>);
 }
 export default Footer;
