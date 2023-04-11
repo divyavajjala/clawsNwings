@@ -1,14 +1,14 @@
 import React from "react";
-import logo from '../assets/logo-tr.png';
 import { Link } from "react-router-dom";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-// import backgroundImage from "../../src/assets/bg-image.jpg"
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import logo from '../../src/assets/logo.svg';
 
 
 
 function Header ({size}) {
     return (<div className="navbar-container">
             <img className="logo" src={logo} alt="logo"></img>
+            {/* <object data={logo} /> */}
             <ul className="navbar-items">
                 <li className="nav-item">
                     <Link className= "nav-links" to="/">HOME</Link>
