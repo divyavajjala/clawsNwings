@@ -2,11 +2,9 @@
 import Menu from "./menu";
 function Orderonline () {
     return (
-        <div>
-            {/* <Header></Header> */}
-            <h2>Orderonline</h2>
+        // <div>
             <Menu></Menu>
-        </div>
+        // </div>
     )
 }
 export default Orderonline;

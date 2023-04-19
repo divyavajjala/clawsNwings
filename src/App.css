@@ -1,67 +1,110 @@
-
 body {
     background-color: rgb(0, 0, 0);
     position: relative;
     margin: 0;
     padding: 0;
-    
 }
+
 .navbar-container {
     position: fixed;
     top:0;
+    /* height: 116px; */
     width: 100%;
-    /* background-color: rgba(0,0,0,.5); */
     background-color: rgba(85, 85, 85,0.5);
-    /* border: 3px solid yellow; */
-    border-radius: 5px;
+}
 
+.navbar-container::after {
+    content: '';
+    display: block;
+    clear: both;
 }
+
+.navbar-items {
+    /* display: inline-block; */
+    padding: 0;
+    margin: 32.4px 0  32.4px 20% ;
+}
+
 .logo {
-    float: left;
-    margin: 10px 120px 0 10px;
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0 10px 30px;
 }
+
+.hamburger-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: #fff;
+    padding: .25rem .75rem;
+    border: 1px solid rgb(252, 252, 71);
+    border-radius: .25rem;
+}
+
+.navbar-items.showNavItems {
+    right: 0;
+}
+
+
 
 .nav-item {
-    /* display: inline-block; */
-    margin: 20px;
+    /* margin: 20px; */
     float: left;
     list-style-type: none;
+    /* padding-top: 10px; */
 }
+
 .navbar-items::after {
     content:"";
     display: block;
     clear: both;
 }
+
 .nav-item a {
+    display: inline-block;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
     /* font-family: ; */
     padding: 12px;
+    margin-right: 20px;
     color: white;
 }
+
 .text {
     position: absolute;
     top: 10px;
     right: 10px;
     color: black;
 }
+
+.items {
+    color: white;
+}
+
 .about {
     color: white;
 }
+
 .cart {
     float: right;
 }
+
 .nav-item a:hover {
     background-color: yellow;
     color: black;
-
 }
+
 h2 {
     color: yellow;
     text-align: center;
     margin-top: 150px;
 }
+
 .menulist-item {
     list-style-type: none;
     width: 400px;
@@ -73,18 +116,25 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 5px 8px yellow;
 }
+
 .description {
     height: 85px;
     color: white;
 }
+.image {
+    width: 100px;
+    height: 100px;
+}
 .itemname,.price {
     color: yellow;
+    display: inline-block;
 }
+
 .btn-container {
     margin: 30px;
     text-align: center;
-    /* padding: 20px; */
 }
+
 .filter-btn {
     padding: 5px;
     margin: 10px;
@@ -92,10 +142,16 @@ h2 {
     border-color: transparent;
     border-radius: 5px;
     border: 1px solid yellow;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 13px;
+    background-color: transparent;
+}
+
+.filter-btn:hover {
+    color: #000;
     background-color: yellow;
 }
+
 .border-img {
     height: 20px;
     display: block;
@@ -105,116 +161,106 @@ h2 {
     color: yellow;
     padding: 0;
 }
-/* .gallery {
-    width: 450px;
-} */
+
 .socialmedia {
     padding: 25px;
     /* border: 1px solid rgb(94, 220, 220); */
     background-color: rgba(85, 85, 85,0.5);
     border-radius: 5px;
 }
+
 .socialmedia-links {
     text-align: center;
     padding: 20px;
 }
+
 .instagram,.facebook {
     text-align: center;
     padding-right: 30px; 
     color: yellow;
-
 }
+
 .address {
     color: yellow;
     text-align: center;
 }
+
 .address-text,.contact {
-    margin: 20px;
-}
-/* 
-.navbar-container {
-    background-color: rgb(0, 0, 0,0.5);
-    width: 800px;
-}
-.navbar-items {
-    padding: 20px;
-    font-size: 13px;
-    font-weight: bold;
-}
-.lo
-    width: 250px;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-a {
-    text-decoration: none;
-    color: yellow;
-    padding: 10px;
-}
-a:hover {
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
-}
-h2,.itemname,.price{
-    color: yellow;
-}
-.description {
-    color: white;
-}
-.menulist-container {
-    width: 70%;
-    margin: auto;
-    justify-content: center;
-    
-}
-.menulist-item {
-    border: 1px solid yellow;
-    height: 300px;
     margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #363636;
-}
-.itemname,.price {
-    text-align: center;
-}
-.addtocart-btn {
-    width: 300px;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 5px;
-    border-color: transparent; 
 }
 
-.cart {
-    float: right;
-} */
-.cnw-relative {
-    position: relative;
+@media  screen and (max-width: 650px) {
+    .logo {
+        width:50px;
+        float: left;
+        position: static;
+        padding: .3125rem 0;
+    }
+
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0 0 0;
+        position: absolute;
+        background-color: #000;
+        min-width: 150px;
+        top: 0;
+        right: -150px;
+        transition: right 0.5s linear;
+    }
+    .hamburger-icon {
+        display: inline-block;
+    }
+    .address {
+        font-size: 10px;
+    }
+    /* .btn-container {
+        transition :all 2s ease-in-out .2s,background-color .5s ease-in-out;
+        position: fixed;
+        background-color: gray;
+        overflow-x: scroll;
+        margin: 10px;
+        display: flex;
+        scroll-behavior: smooth;
+
+    }
+    .filter-btn {
+        margin: 5px;
+    } */
+    .menulist-item {
+        width: 200px;
+        height: 290px;
+    }
+    .addtocart-btn {
+        margin-top: 50px; 
+    }
 }
-.ellipse {
-    display: inline-block;
-    width: 200px;
-    height: 150px;
-    border-radius: 75px;
-    background-color: red;
+
+@media only screen and (min-width:651px) and (max-width: 820px) {
+    .logo {
+        width:70px;
+    }
+
+    .navbar-items {
+        margin-left: 17%;
+    }
+    
+    .nav-item a {
+        font-size: 12px;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    .filter-btn {
+        margin: 10px;
+        font-size: 12px;
+    }
+    .menulist-item {
+        width: 200px;
+        height: 290px;
+    }
+    .addtocart-btn {
+        margin-top: 50px; 
+    }
 }
-.triangle {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid red;
-}
-.one {
-    position: relative;
-    top: -57px;
-    left: -3px;
-}
-.two {
-    position: relative;
-    top: -97px;
-    left: -23px;
-}
+

@@ -4,13 +4,15 @@ import Category from "./categories";
 import items from "../pages/data"
 import "../../../src/App.css"
 import borderimage from "../../assets/My project.png"
+// import eggbiryani from "../../assets/image-13.jpg"
 
 const allCategories = ["all",...new Set(items.map((item)=> item.category))]; 
 
-function Menu() {
+function Menu({addCart}) {
     const [menuItems,setMenuItems] = useState(items);
     const [activeCategory, setActiveCategory] = useState("");
     const [categories] = useState(allCategories);
+    
     const filterItems = (category)=> {
         setActiveCategory(category);
         if(category==="all"){
@@ -28,8 +30,9 @@ function Menu() {
             <h3 className="itemname">{item.title}</h3>
             {/* <span className="category">{item.category}</span> */}
             <span className="price">{item.price}<span>Rs</span></span>
+            <img className="image" src={item.img} alt={item.title}></img>
             <p className="description">{item.description}</p>
-            <button className = "addtocart-btn" onClick={addcart}>Add to cart</button>
+            <button className = "addtocart-btn" onClick={()=> addCart(listItems)}>Add to cart</button>
         </li>
     );
     return(
@@ -41,8 +44,7 @@ function Menu() {
             <ul className = "menulist-container">{listItems}</ul>
         </div>
     )
+    
 }
-function addcart() {
      
-}
 export default Menu;
