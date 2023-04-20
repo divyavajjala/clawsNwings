@@ -112,7 +112,7 @@ h2 {
     margin: 10px;
     padding: 20px;
     border: 1px solid yellow;
-    height:250px;
+    height: 380px;
     border-radius: 5px;
     box-shadow: 0 5px 8px yellow;
 }
@@ -122,12 +122,13 @@ h2 {
     color: white;
 }
 .image {
+    display: inline-block;
+    margin-left: 100px;
     width: 100px;
     height: 100px;
 }
 .itemname,.price {
     color: yellow;
-    display: inline-block;
 }
 
 .btn-container {
@@ -229,7 +230,8 @@ h2 {
     } */
     .menulist-item {
         width: 200px;
-        height: 290px;
+        height: 340px;
+        font-size: 10px;
     }
     .addtocart-btn {
         margin-top: 50px; 
@@ -257,7 +259,7 @@ h2 {
     }
     .menulist-item {
         width: 200px;
-        height: 290px;
+        height: 380px;
     }
     .addtocart-btn {
         margin-top: 50px; 

@@ -5,6 +5,7 @@ import panner from "../../assets/paneer-biryani.jpeg"
 import eggnoodles from "../../assets/egg.jpeg"
 import chickenNoodles from "../../assets/special chicken noodles.jpeg"
 import vegnoodles from "../../assets/image-12.jpg"
+import vegSchezwannoodles from "../../assets/veg-schezwan.jpeg"
 import chickenfiredRice from "../../assets/chicken fried rice.jpeg"
 import ButterScotch from "../../assets/Butterscotch.jpg"
 import vanilla from "../../assets/vanilla.png"
@@ -78,7 +79,7 @@ const items = [
         category: "Biryani",
         img: panner,
         price: 210,
-        description: "Richly flavored aromatic Dum rice Layered with juicy marinated chicken pieces in a delicate blend of whole spices and served with gravy curry and raita."
+        description: "Sinfully creamy biryani prepared with flavored rice and paneer cooked in a creamy masala served with love."
     },
     {
         id: 6,
@@ -124,7 +125,7 @@ const items = [
         id: 11,
         title: "Veg Schezwan Noodels",
         category: "Chinese FastFood",
-        img: vegnoodles,
+        img: vegSchezwannoodles,
         price: 159
     },
 
