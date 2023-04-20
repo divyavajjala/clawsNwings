@@ -49,13 +49,9 @@ body {
     right: 0;
 }
 
-
-
 .nav-item {
-    /* margin: 20px; */
     float: left;
     list-style-type: none;
-    /* padding-top: 10px; */
 }
 
 .navbar-items::after {
@@ -242,6 +238,10 @@ h2 {
     }
     .addtocart-btn {
         margin-top: 50px; 
+    }
+    .gallery img {
+        width: 250px;
+        height: 180px;
     }
 }
 
