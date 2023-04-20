@@ -11,6 +11,9 @@ function Footer() {
                 <span className='contact'>Contact: +91 9000770732</span>
                 <span>info@claws_n_wings.com</span>
             </div>
+            <div className='developer'>
+                <span>Designed and developed by divya.vajjala@outlook.com</span>
+            </div>
 
         </div>);
 }

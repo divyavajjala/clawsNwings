@@ -190,6 +190,13 @@ h2 {
     margin: 10px;
 }
 
+.developer {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 @media  screen and (max-width: 650px) {
     .logo {
         width:50px;
